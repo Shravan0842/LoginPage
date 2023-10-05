@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="signupform">
+        <div>
+            <h1 id="title">Signup</h1><input type="text" id="nameField" placeholder="Enter Name">
+        </div>
+        <div>
+            <input type="email" id="emailField" placeholder="Enter Email">
+        </div>
+        <div><input type="password" placeholder="Enter password"></div>
+        <button id="signupbtn" class="signupbtn">Signup</button>
+        <p id="text">Already have account?</p>
+        <button id="loginbtn" class="loginbtn">Login</button>
+    </div>
+
+</body>
+
+<script>
+    let loginbtn = document.getElementById("loginbtn");
+    let signupbtn = document.getElementById("signupbtn");
+    let emailField = document.getElementById("emailField");
+    let title = document.getElementById("title");
+
+    
+    loginbtn.onclick = function(){ 
+        title.innerHTML = "Login";
+        signupbtn.remove("signupbtn");
+        loginbtn.classList.add("loginbtn");
+        text.remove();
+        nameField.remove();
+    }
+</script>
+</html>
